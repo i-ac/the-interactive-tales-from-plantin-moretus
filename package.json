@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build --base=/the-interactive-tales-from-plantin-moretus/",
+    "preview": "vite preview --base=/the-interactive-tales-from-plantin-moretus/"
   },
   "devDependencies": {
     "vite": "^6.0.5"
