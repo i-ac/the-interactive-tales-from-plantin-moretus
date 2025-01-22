@@ -9,6 +9,11 @@
     "preview": "vite preview --base=/the-interactive-tales-from-plantin-moretus/"
   },
   "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "stylelint": "^16.13.2",
+    "stylelint-config-standard": "^37.0.0",
     "vite": "^6.0.5"
   }
 }
