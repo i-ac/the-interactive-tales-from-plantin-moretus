@@ -4,7 +4,7 @@
 
       const $navButton = document.querySelector('.main-nav__button');
       const $navList = document.querySelector('.main-nav__list');
-      const $navLangList = document.querySelector('.lang-nav__list');
+      const $navLangList = document.querySelector('.header__lang-nav');
       const $primaryButton = document.querySelector('.header__primary-button');
       const $iconOpen = document.querySelector('.button__svg #menu_open');
       const $iconClose = document.querySelector('.button__svg #menu_close');
