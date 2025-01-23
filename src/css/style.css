@@ -27,7 +27,7 @@ img {
 body {
   font-family: var(--font-family);
   font-size: var(--fs-step-0);
-  line-height: var(--s-xs);
+  line-height: var(--s-m-s);
   color: var(--color-black);
   background-color: var(--color-beige);
   margin: 0;
@@ -35,6 +35,7 @@ body {
   display:flex;
   flex-direction: column;
   align-items:stretch;
+  text-align: center;
 }
 
 input, textarea, button {
@@ -48,6 +49,10 @@ a:any-link{
 
 a{
   color: var(--color-black);
+}
+
+.hero, .intro{
+  padding: var(--s-s-m);
 }
 
 /* mobile navigation */
@@ -253,6 +258,47 @@ header{
     width:86px;
     height:62px;
   }
+}
+
+/* mobile layout & styling */
+
+.hero{
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.hero__title{
+  display:flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--s-xs);
+}
+
+.hero__title--script{
+  font-family: var(--font-family-script);
+  color: var(--color-yellow-green);
+  font-size: var(--fs-step-9);
+  line-height: var(--s-xl-s);
+}
+
+.hero__title--elegant{
+  font-family: var(--font-family-elegant-bold);
+  color: var(--color-maroon);
+}
+
+.hero__read-info{
+  font-family: var(--font-family-raleway);
+  padding: 0 60px;
+  padding-top: var(--s-s);
+}
+
+.hero__title--elegant-regular{
+  font-family: var( --font-family-elegant-regular);
+}
+
+.hero__scroll-icon{
+  transform: rotate(180deg);
 }
 
 .hidden{

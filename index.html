@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pirata+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>The Interactive Tales from Plantin-Moretus</title>
   </head>
   <body>
@@ -89,22 +89,22 @@
           <li class="main-nav__list-item">
             <a href="#intro">Intro</a>
           </li>
-          <li class="main-nav__list-item--dropdown">
-            <div class="main-nav__list-item--dropdown-name">
+          <li class="main-nav__list-item main-nav__list-item--dropdown">
+            <div class="main-nav__list-item main-nav__list-item--dropdown-name">
               <a href="/">Chapter I</a>
               <img class="list-item__icon" src="./src/assets/images/svg/icon_drop-down.svg" alt="drop down icon" width="22" height="18" >
             </div>
-            <ul class="main-nav__list-item--dropdown-list">
+            <ul class="main-nav__list-item main-nav__list-item--dropdown-list">
               <li><a href="#antwerp">Move To Antwerpia</a></li>
               <li><a href="#jobs">Working Multiple Jobs</a></li>
             </ul>
           </li>
-          <li class="main-nav__list-item--dropdown">
-            <div class="main-nav__list-item--dropdown-name">
+          <li class="main-nav__list-item main-nav__list-item--dropdown">
+            <div class="main-nav__list-item main-nav__list-item--dropdown-name">
               <a href="/">Chapter II</a>
               <img class="list-item__icon" src="./src/assets/images/svg/icon_drop-down.svg" alt="drop down icon" width="22" height="18">
             </div>
-            <ul class="main-nav__list-item--dropdown-list">
+            <ul class="main-nav__list-item main-nav__list-item--dropdown-list">
               <li><a href="#incident">The Stab Incident</a></li>
               <li><a href="#change">From Binding To Printing</a></li>
               <li><a href="#business">The First Printing Business</a></li>
@@ -129,12 +129,21 @@
     </header>
     <main>
       <section class="hero">
-        <h2>Apprentice to Master: The Early Journey of Christophe Plantin</h2>
+        <h2 class="hero__title">
+          <span class="hero__title hero__title hero__title--elegant-regular">Story 1</span>
+          <span class="visually-hidden">-</span>
+          <span class="hero__title hero__title--script">Apprentice to Master</span>
+          <span class="visually-hidden">:</span>
+          <span class="hero__title hero__title--elegant">The Early Journey of Christophe Plantin</span>
+        </h2>
+        <p class="hero__concept_info visually-hidden">Join Christophe Plantin as his apprentice and assist him on his journey to Antwerp and the world of printing.</p>
+        <p class="hero__read-info">This story will take you 12 minutes to read.</p>
+        <img class="hero__scroll-icon" src="src/assets/images/svg/icon_scroll.svg" alt="scroll indicator" width="40" height="42">
       </section>
       <section>
-        <h2 id="intro">Intro</h2>
+        <h2 class="intro visually-hidden" id="intro">Intro</h2>
       </section>
-      <section>
+      <section class="visually-hidden">
         <h2>Chapter I</h2>
         <section>
           <h3 id="antwerp">Move To Antwerpia</h3>
@@ -143,7 +152,7 @@
           <h3 id="jobs">Working Multiple Jobs</h3>
         </section>
       </section>
-      <section>
+      <section class="visually-hidden">
         <h2>Chapter II</h2>
         <section>
           <h3 id="incident">The Stab Incident</h3>
@@ -155,7 +164,7 @@
           <h3 id="business">The First Printing Business</h3>
         </section>
       </section>
-      <section class="outro">
+      <section class="visually-hidden">
         <h2 id="outro">Afterword</h2>
       </section>
     </main>
