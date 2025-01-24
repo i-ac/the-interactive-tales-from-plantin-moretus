@@ -128,7 +128,7 @@
       </a>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero visually-hidden">
         <img class="hero__image" src="src/assets/images/png/hero.png" alt="Christophe Plantin's portrait" width="1045" height="1690">
         <div class="hero__content">
           <h2 class="hero__title">
@@ -145,9 +145,23 @@
           <img class="hero__scroll-icon" src="src/assets/images/svg/icon_scroll.svg" alt="scroll indicator" width="40" height="42">
         </div>
       </section>
-      <section>
-        <h2 class="intro visually-hidden" id="intro">Intro</h2>
-      </section>
+      <section class="intro">
+        <h2 class="intro__title">Intro</h2>
+        <div>
+            <p>What shall I call you, Apprentice?</p>
+        </div>
+        <h3>Step into the Shoes of an Apprentice</h3>
+        <form class="intro__form">
+            <p>I,</p>
+            <label for="name" class="visually-hidden">Enter your name:</label>
+            <input class="form__input" type="text" name="username" id="name" minlength="3" placeholder="Enter your name" required>
+            <p>accept the challenge to join Christophe Plantin on his journey in Antwerp.</p>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="intro__message">
+            <p>Welcome, <span class="name-output"></span>! You are now part of the story.</p>
+        </div>
+    </section>
       <section class="visually-hidden">
         <h2>Chapter I</h2>
         <section>
@@ -176,6 +190,7 @@
     <footer>
 
     </footer>
+    <script type="module" src="/src/js/form.js"></script>
     <script type="module" src="/src/js/main.js"></script>
     <script type="module" src="/src/js/navigation.js"></script>
   </body>

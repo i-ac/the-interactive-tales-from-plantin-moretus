@@ -62,7 +62,7 @@ a{
   color: var(--color-black);
 }
 
-.hero, .intro{
+.hero{
   padding: var(--s-s-m);
 }
 
@@ -258,6 +258,8 @@ header{
 
 /* mobile layout & styling */
 
+/* hero */
+
 .hero{
   display:flex;
   flex-flow: column nowrap;
@@ -331,6 +333,45 @@ header{
   padding-top: 42px;
   transform: translateY(-88%);
   /* background-color: aqua; */
+}
+
+/* intro */
+
+.intro{
+  padding: var(--s-20px);
+  background-color: var(--color-charcoal);
+  height: 100vh;
+  color: var(--color-beige);
+  background-image: url("../assets/images/svg/section_styling_line.svg");
+  background-repeat: repeat-x;
+  background-position: top var(--s-28px) center;
+  /* height:2;
+  width:171; */
+}
+
+.intro__title{
+  font-family: var(--font-family-elegant-regular);
+  font-size: var(--fs-step-4);
+  background-color: var(--color-charcoal);
+  padding: 0 var(--s-20px);
+  width:fit-content;
+  text-align: center;
+  display: flex;
+  justify-self: center;
+}
+
+/* interactivity intro */
+
+.intro__form{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--s-s-m);
+  padding: var(--s-s-m);
+}
+
+.intro__message{
+  display:none;
 }
 
 /* start responsive - mobile */
