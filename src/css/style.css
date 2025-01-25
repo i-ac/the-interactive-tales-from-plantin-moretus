@@ -360,6 +360,7 @@ header{
   text-align: center;
   display: flex;
   justify-self: center;
+  align-self: center;
 }
 
 /* interactivity intro */
@@ -505,6 +506,29 @@ header{
   font-size: var(--fs-step-2);
   font-style: normal;
   font-weight: 400;
+}
+
+.part-one__scroll-animation{
+  display:grid;
+  grid-template-rows: 1fr;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+  object-position: center;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.part-one__scroll-animation > img, .part-one__scroll-animation > svg{
+  grid-row:1;
+  grid-column:1;
+  justify-self: center;
+  align-self: center;
+  /* width: 50%;
+  height: 50%; */
+}
+
+.scroll-animation__vectors,.scroll-animation__vectors >svg > g{
+  z-index:1;
 }
 
 /* start responsive - mobile */
