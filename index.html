@@ -145,7 +145,7 @@
           <img class="hero__scroll-icon" src="src/assets/images/svg/icon_scroll.svg" alt="scroll indicator" width="40" height="42">
         </div>
       </section>
-      <section class="intro">
+      <section class="intro visually-hidden">
         <h2 class="intro__title">Intro</h2>
         <div>
             <p>What shall I call you, Apprentice?</p>
@@ -171,16 +171,49 @@
           <h3 id="jobs">Working Multiple Jobs</h3>
         </section>
       </section>
-      <section class="visually-hidden">
-        <h2>Chapter II</h2>
-        <section>
-          <h3 id="incident">The Stab Incident</h3>
+      <section class="chapter-two">
+        <h2>
+          <span class="chapter-two__title">Chapter</span>
+          <span class="chapter-two__title chapter-two__title--number">II</span>
+        </h2>
+        <section class="part-one">
+          <h3 class="part-one__title" id="incident">
+            <span class="title__part">Part I</span>
+            <span class="visually-hidden">:</span>
+            <span class="title__name">The Stab Incident</span>
+            <span class="title__year">1554 - early 1555</span>
+          </h3>
+          <div class="part-one__plantin-chat">
+            <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+            <div class="plantin-chat__text">
+              <p class="text">In 1554, one fateful night changed everything</p>
+            </div>
+          </div>
+
+          <section class="part-one__trouble">
+            <h4 class="trouble__title">Trouble on the Meir Bridge</h4>
+            <p class="trouble__text">In 1554, or early 1555, I was attacked on Meir Bridge by a group of drunken men who mistook me for someone else. As I carried a casket to a client, one drew a dagger and stabbed me deeply. It was so deep, he had trouble retrieving back his dagger. Despite the pain, I sat down my basket and I explained the mistake calmly, but the men fled.</p>
+          </section>
+          <div class="part-one__scroll-animation">
+            <img src="./src/assets/images/svg/stab_565w.svg" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="565" height="693.167">
+          </div>
+          <section class="part-one__half">
+            <h4 class="half__title">Half dead or half alive?</h4>
+            <p class="half__text">Gravely wounded, I was attended to by renowned surgeon Joannes Farinalius, who stitched the deep wound. Though I wasn’t expected to survive the attack, I made it through. But the wound left me physically weakened, and I knew I could no longer continue with bookbinding as before, because it’s a craft that demanded so much strength. </p>
+          </section>
+          <div class="part-one__plantin-chat">
+            <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+            <div class="plantin-chat__text">
+              <p class="text">Bookbinding will never be the same again</p>
+              <p class="text">I need your help now more than ever!</p>
+            </div>
+          </div>
         </section>
-        <section>
-          <h3 id="change">From Binding To Printing</h3>
+        <section class="part-two">
+          <h3 class="visually-hidden" id="change">From Binding To Printing</h3>
         </section>
-        <section>
-          <h3 id="business">The First Printing Business</h3>
+        <section class="part-three">
+          <h3 class="visually-hidden" id="business">The First Printing Business</h3>
         </section>
       </section>
       <section class="visually-hidden">
@@ -190,8 +223,10 @@
     <footer>
 
     </footer>
-    <script type="module" src="/src/js/form.js"></script>
-    <script type="module" src="/src/js/main.js"></script>
-    <script type="module" src="/src/js/navigation.js"></script>
+
+    <script type="module" src="./src/js/scrollytelling.js"></script>
+    <script type="module" src="./src/js/form.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/navigation.js"></script>
   </body>
 </html>
