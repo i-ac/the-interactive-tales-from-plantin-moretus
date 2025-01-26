@@ -1,3 +1,5 @@
 <svg width="171" height="2" viewBox="0 0 171 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <line y1="1" x2="171" y2="1" stroke="#F4F2EF"/>
+  <style>.fine-line{display:none}.fine-line:target{display:block}</style>
+  <line class="fine-line" id="line-beige" y1="1" x2="171" y2="1" stroke="#F4F2EF"/>
+  <line class="fine-line" id="line-maroon" y1="1" x2="171" y2="1" stroke="#60212E"/>
 </svg>

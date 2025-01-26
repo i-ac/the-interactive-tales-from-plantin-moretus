@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pirata+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>The Interactive Tales from Plantin-Moretus</title>
   </head>
-  <body>
+  <body id="top">
     <header>
       <div class="visually-hidden">
         <p>Six Stories, One Legacy</p>
@@ -95,8 +95,8 @@
               <img class="list-item__icon" src="./src/assets/images/svg/icon_drop-down.svg" alt="drop down icon" width="22" height="18" >
             </div>
             <ul class="main-nav__list-item main-nav__list-item--dropdown-list">
-              <li><a href="#antwerp">Move To Antwerpia</a></li>
-              <li><a href="#jobs">Working Multiple Jobs</a></li>
+              <li><a href="#incident">The Stab Incident</a></li>
+              <li><a href="#change">From Binding To Printing</a></li>
             </ul>
           </li>
           <li class="main-nav__list-item main-nav__list-item--dropdown">
@@ -105,13 +105,12 @@
               <img class="list-item__icon" src="./src/assets/images/svg/icon_drop-down.svg" alt="drop down icon" width="22" height="18">
             </div>
             <ul class="main-nav__list-item main-nav__list-item--dropdown-list">
-              <li><a href="#incident">The Stab Incident</a></li>
-              <li><a href="#change">From Binding To Printing</a></li>
               <li><a href="#business">The First Printing Business</a></li>
+              <li><a href="#cliffhanger">From Triumph to Turmoil</a></li>
             </ul>
           </li>
           <li class="main-nav__list-item">
-            <a href="#outro">Afterword</a>
+            <a href="#outro">Outro</a>
           </li>
         </ul>
       </nav>
@@ -128,15 +127,15 @@
       </a>
     </header>
     <main>
-      <section class="hero visually-hidden">
+      <section class="hero">
         <img class="hero__image" src="src/assets/images/png/hero.png" alt="Christophe Plantin's portrait" width="1045" height="1690">
         <div class="hero__content">
           <h2 class="hero__title">
             <span class="hero__title hero__title hero__title--elegant-regular">Story 1</span>
             <span class="visually-hidden">-</span>
-            <span class="hero__title hero__title--script">Apprentice <span class="hero__title hero__title--elegant-bold-green">to</span> Master</span>
+            <span class="hero__title hero__title--script">Wounds <span class="hero__title hero__title--elegant-bold-green">to</span> Wounders</span>
             <span class="visually-hidden">:</span>
-            <span class="hero__title hero__title--elegant-bold"><span>The Early Journey</span><span>of</span><span>Christophe Plantin</span></span>
+            <span class="hero__title hero__title--elegant-bold"><span> The Early Journey </span> <span> of </span> <span> Christophe Plantin </span> </span>
           </h2>
           <p class="hero__concept_info visually-hidden">Join Christophe Plantin as his apprentice and assist him on his journey to Antwerp and the world of printing.</p>
           <!-- <p class="hero__read-info">This story will take you 12 minutes to read.</p> -->
@@ -145,159 +144,473 @@
           <img class="hero__scroll-icon" src="src/assets/images/svg/icon_scroll.svg" alt="scroll indicator" width="40" height="42">
         </div>
       </section>
-      <section class="intro visually-hidden">
-        <h2 class="intro__title">Intro</h2>
-        <div>
-            <p>What shall I call you, Apprentice?</p>
+      <section class="intro">
+        <h2 class="intro__title" id="intro">Intro</h2>
+        <div class="part-one__plantin-chat">
+          <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+          <div class="plantin-chat__text">
+            <p class="text">What shall I call you, Apprentice?</p>
+          </div>
         </div>
-        <h3>Step into the Shoes of an Apprentice</h3>
-        <form class="intro__form">
-            <p>I,</p>
-            <label for="name" class="visually-hidden">Enter your name:</label>
-            <input class="form__input" type="text" name="username" id="name" minlength="3" placeholder="Enter your name" required>
-            <p>accept the challenge to join Christophe Plantin on his journey in Antwerp.</p>
-            <button type="submit">Submit</button>
-        </form>
-        <div class="intro__message">
-            <p>Welcome, <span class="name-output"></span>! You are now part of the story.</p>
+        <div class="intro__container">
+          <h3>Step into the Shoes of an Apprentice</h3>
+          <form class="intro__form">
+              <p>I,</p>
+              <label for="name" class="visually-hidden">Enter your name:</label>
+              <input class="form__input" type="text" name="username" id="name" minlength="3" placeholder="Enter your name" required>
+              <p>accept the challenge to join Christophe Plantin on his journey in Antwerp.</p>
+              <button type="submit">Submit</button>
+          </form>
+          <div class="intro__message">
+              <p>Welcome, <span class="name-output"></span>! You are now part of the story.</p>
+          </div>
         </div>
-    </section>
-      <section class="visually-hidden">
-        <h2>Chapter I</h2>
-        <section>
-          <h3 id="antwerp">Move To Antwerpia</h3>
-        </section>
-        <section>
-          <h3 id="jobs">Working Multiple Jobs</h3>
-        </section>
+      </section>
+      <section class="chapter-one">
+        <div class="chapter-one__maroon-container">
+          <h2 class="chapter-one__title" id="chapter-one">
+            <div class="chapter-one__title chapter-one__title--line">
+              <span class="chapter-one__title chapter-one__title--name" >Chapter</span>
+            </div>
+            <span class="chapter-one__title chapter-one__title--number">I</span>
+          </h2>
+          <section class="part-one">
+            <h3 class="part-one__title" id="incident">
+              <span class="title__part">Part I</span>
+              <span class="visually-hidden">:</span>
+              <span class="title__name">The Stab Incident</span>
+              <span class="title__year">1554 - early 1555</span>
+            </h3>
+            <div class="part-one__plantin-chat">
+              <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+              <div class="plantin-chat__text">
+                <p class="text">In 1554, one fateful night changed everything</p>
+              </div>
+            </div>
+
+            <section class="part-one__trouble">
+              <h4 class="trouble__title">Trouble on the Meir Bridge</h4>
+              <p class="trouble__text">In 1554, or early 1555, I was attacked on Meir Bridge by a group of drunken men who mistook me for someone else. As I carried a casket to a client, one drew a dagger and stabbed me deeply. It was so deep, he had trouble retrieving back his dagger. Despite the pain, I sat down my basket and I explained the mistake calmly, but the men fled.</p>
+            </section>
+            <div class="part-one__scroll-animation">
+              <img class="scroll-animation__blood" src="./src/assets/images/png/stab_565w_blood.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
+              <img class="scroll-animation__sketch" src="./src/assets/images/png/stab_565w_plantin_sketch.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
+              <img class="scroll-animation__overlay" src="./src/assets/images/png/stab_565w_plantin_overlay.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
+              <img class="scroll-animation__sword" src="./src/assets/images/png/stab_565w_sword.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
+              <svg class="scroll-animation__vectors" width="280" height="396" viewBox="0 0 565 800" fill="none" xmlns="http://www.w3.org/2000/svg" title="photo collage of plantin sketch with bloody stab in the shoulder" preserveAspectRatio= "xMidYMid slice">
+                <g id="stab_565w_vectors">
+                  <g id="plantin_tear_3">
+                    <circle id="Ellipse 13" cx="255.582" cy="355.453" r="6.5155" fill="#D8E63C"/>
+                    <path id="Polygon 7" d="M255.582 337.535L261.225 352.195H249.939L255.582 337.535Z" fill="#D8E63C"/>
+                  </g>
+                  <g id="plantin_tear_2">
+                    <circle id="Ellipse 13_2" cx="293.047" cy="321.246" r="6.5155" fill="#D8E63C"/>
+                    <path id="Polygon 7_2" d="M293.047 303.329L298.689 317.989H287.404L293.047 303.329Z" fill="#D8E63C"/>
+                  </g>
+                  <g id="plantin_tear_1">
+                    <circle id="Ellipse 13_3" cx="268.609" cy="274.008" r="6.5155" fill="#D8E63C"/>
+                    <path id="Polygon 7_3" d="M268.609 256.091L274.252 270.751H262.967L268.609 256.091Z" fill="#D8E63C"/>
+                  </g>
+                  <path id="stitch_4" d="M443.051 531.862L476.458 498.455" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="stitch_3" d="M431.23 520.041L464.638 486.634" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="stitch_2" d="M419.406 508.22L452.813 474.813" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path id="stitch_1" d="M407.527 496.343L440.935 462.936" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
+                  <g id="drops" class="drops">
+                    <g id="drop_12">
+                      <ellipse id="Ellipse 13_4" cx="438.228" cy="792.624" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_4" d="M438.228 774.815L443.837 789.386H432.618L438.228 774.815Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_11">
+                      <ellipse id="Ellipse 13_5" cx="462.696" cy="757.494" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_5" d="M462.696 739.686L468.306 754.256H457.087L462.696 739.686Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_10">
+                      <ellipse id="Ellipse 13_6" cx="413.993" cy="745.621" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_6" d="M413.993 727.813L419.603 742.383H408.383L413.993 727.813Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_9">
+                      <ellipse id="Ellipse 13_7" cx="438.228" cy="716.305" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_7" d="M438.228 698.497L443.837 713.067H432.618L438.228 698.497Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_8">
+                      <ellipse id="Ellipse 13_8" cx="462.579" cy="687.959" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_8" d="M462.579 670.15L468.189 684.721H456.969L462.579 670.15Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_7">
+                      <ellipse id="Ellipse 13_9" cx="413.993" cy="675.223" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_9" d="M413.993 657.415L419.603 671.985H408.383L413.993 657.415Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_6">
+                      <ellipse id="Ellipse 13_10" cx="438.228" cy="645.318" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_10" d="M438.228 627.509L443.837 642.08H432.618L438.228 627.509Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_5">
+                      <ellipse id="Ellipse 13_11" cx="461.97" cy="612.125" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_11" d="M461.97 594.316L467.58 608.887H456.36L461.97 594.316Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_4">
+                      <ellipse id="Ellipse 13_12" cx="413.993" cy="603.16" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_12" d="M413.993 585.352L419.603 599.922H408.383L413.993 585.352Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_3">
+                      <ellipse id="Ellipse 13_13" cx="438.228" cy="565.364" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_13" d="M438.228 547.556L443.837 562.126H432.618L438.228 547.556Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_2">
+                      <ellipse id="Ellipse 13_14" cx="462.579" cy="544.527" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_14" d="M462.579 526.719L468.189 541.29H456.969L462.579 526.719Z" fill="#FF0035"/>
+                    </g>
+                    <g id="drop_1">
+                      <ellipse id="Ellipse 13_15" cx="413.993" cy="521.026" rx="6.47766" ry="6.47572" fill="#FF0035"/>
+                      <path id="Polygon 7_15" d="M413.993 503.218L419.603 517.789H408.383L413.993 503.218Z" fill="#FF0035"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p>“Gentlemen, you are mistaken. What harm have I done you?” </p>
+            </div>
+            <section class="part-one__half">
+              <h4 class="half__title">Half dead or half alive?</h4>
+              <p class="half__text">Gravely wounded, I was attended to by renowned surgeon Joannes Farinalius, who stitched the deep wound. Though I wasn’t expected to survive the attack, I made it through. But the wound left me physically weakened, and I knew I could no longer continue with bookbinding as before, because it’s a craft that demanded so much strength. </p>
+            </section>
+            <div class="part-one__plantin-chat">
+              <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+              <div class="plantin-chat__text">
+                <p class="text">Bookbinding will never be the same again</p>
+                <p class="text">I need your help now more than ever!</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="chapter-one__charcoal-container">
+          <div aria-hidden="true">
+            <p class="chapter-one__repeat-title">
+              <div class="chapter-one__repeat-title chapter-one__repeat-title--line">
+                <span class="chapter-one__repeat-title chapter-one__repeat-title--name">Chapter</span>
+              </div>
+              <span class="chapter-one__repeat-title chapter-one__repeat-title--number">I</span>
+            </p>
+          </div>
+          <section class="part-two">
+            <h3 class="part-two__title" id="change">
+              <span class="title__part">Part II</span>
+              <span class="visually-hidden">:</span>
+              <span class="title__name">From Binding To Printing</span>
+              <span class="title__year">early 1555</span>
+            </h3>
+            <section class="part-two__pivotal">
+              <h4 class="pivotal__name">A Pivotal Moment</h4>
+              <p>Was it just my injury that led me to change paths, or was there something more at play? Some would say: yes, it was my injury that pushed me to printing. After all, I did demand a financial claim from my attackers for the damage they caused. But others believe there was more to it. I had ties to a secret religious group, the "House of Love." They saw the potential of printing to spread their ideas. So others believe; no, it was they who sponsored me to make the switch.</p>
+              <div class="part-one__plantin-chat">
+                <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+                <div class="plantin-chat__text">
+                  <p class="text">What do you think, <span class="name-output" >apprentice</span>?</p>
+                  <p class="text">Was it the injury that led me here?</p>
+                  <p class="text">Or something else entirely?</p>
+                </div>
+              </div>
+              <form class="visually-hidden">
+                <fieldset>
+                  <legend>What tipped Plantin towards printing?</legend>
+                  <input type="radio" name="option" value="option1" id="claim">
+                  <label for="claim">Financial Claim</label>
+
+                  <input type="radio" name="option" value="option1" id="house">
+                  <label for="house">House Of Love</label>
+                </fieldset>
+              </form>
+              <div class="part-one__plantin-chat visually-hidden">
+                <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+                <div class="plantin-chat__text">
+                  <p class="text">Select an answer & see what happens.</p>
+                  <p class="text">The truth is ...</p>
+                  <p class="text">The secret sponsorship from the House of Love,</p>
+                  <p class="text">made printing possible.</p>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
       </section>
       <section class="chapter-two">
-        <h2>
-          <span class="chapter-two__title">Chapter</span>
+        <h2 class="chapter-two__title" id="chapter-one">
+          <div class="chapter-two__title chapter-two__title--line">
+            <span class="chapter-two__title chapter-two__title--name">Chapter</span>
+          </div>
           <span class="chapter-two__title chapter-two__title--number">II</span>
         </h2>
-        <section class="part-one">
-          <h3 class="part-one__title" id="incident">
+        <section class="part-three">
+          <h3 class="part-three__title" id="business">
             <span class="title__part">Part I</span>
             <span class="visually-hidden">:</span>
-            <span class="title__name">The Stab Incident</span>
-            <span class="title__year">1554 - early 1555</span>
+            <span class="title__name">The First Printing Business</span>
+            <span class="title__year">1555 - 1562</span>
           </h3>
+          <div class="part-three__confetti">
+            <button class="confetti__button">
+              Let's celebrate!
+            </button>
+            <canvas class="confetti__canvas">
+            </canvas>
+          </div>
           <div class="part-one__plantin-chat">
             <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
             <div class="plantin-chat__text">
-              <p class="text">In 1554, one fateful night changed everything</p>
+              <p class="text"> Click to celebrate the beginning of my printing business!</p>
+              <p class="text">Let’s mark this moment together.</p>
             </div>
           </div>
+          <section class="part-three__press">
+            <h4 class="press__title">The Dawn of the Plantin press</h4>
+            <p>The time had come to turn my dream into reality. In 1554-1555, I opened the Officina Plantiniana, my first printing press, right in my own home on Twaalfmaandenstraat in Antwerp. It was a modest beginning—just one press—but it marked the start of everything. I felt proud, yet I knew the road ahead would be full of risks.</p>
+          </section>
+          <div class="part-one__plantin-chat">
+            <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+            <div class="plantin-chat__text">
+              <p class="text">But even with my growing success,</p>
+              <p class="text">unforeseen challenges awaited…</p>
+            </div>
+          </div>
+        </section>
+        <section class="part-four">
+          <h3 class="part-four__title" id="cliffhanger">
+            <span class="title__part">Part II</span>
+            <span class="visually-hidden">:</span>
+            <span class="title__name">From Triumph to Turmoil</span>
+            <span class="title__year">1562</span>
+          </h3>
+          <section class="part-four__story">
+            <h4>A Press, A Dream, and A Risky Plan</h4>
+            <p>Business was thriving... until 1562. While I was on a business trip in Paris, disaster struck: my business faced seizure because of a printed Calvinistic pamphlet, a dangerous act of heresy. I had to think fast. My solution? Sell some of my possessions at the Vrijdagmarkt to repay my 'creditors’; trusted friends who would hold the goods for me. Genius, don’t you think?</p>
+            <div class="part-one__plantin-chat">
+              <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
+              <div class="plantin-chat__text">
+                <p class="text">Sell & Click the goods away.</p>
+                <p class="text">Reveal the final message.</p>
+              </div>
+            </div>
+          </section>
 
-          <section class="part-one__trouble">
-            <h4 class="trouble__title">Trouble on the Meir Bridge</h4>
-            <p class="trouble__text">In 1554, or early 1555, I was attacked on Meir Bridge by a group of drunken men who mistook me for someone else. As I carried a casket to a client, one drew a dagger and stabbed me deeply. It was so deep, he had trouble retrieving back his dagger. Despite the pain, I sat down my basket and I explained the mistake calmly, but the men fled.</p>
-          </section>
-          <div class="part-one__scroll-animation">
-            <img class="scroll-animation__blood" src="./src/assets/images/png/stab_565w_blood.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
-            <img class="scroll-animation__sketch" src="./src/assets/images/png/stab_565w_plantin_sketch.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
-            <img class="scroll-animation__overlay" src="./src/assets/images/png/stab_565w_plantin_overlay.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
-            <img class="scroll-animation__sword" src="./src/assets/images/png/stab_565w_sword.png" alt="photo collage of plantin sketch with bloody stab in the shoulder" width="280" height="396">
-            <svg class="scroll-animation__vectors" width="280" height="396" viewBox="0 0 565 800" fill="none" xmlns="http://www.w3.org/2000/svg" title="photo collage of plantin sketch with bloody stab in the shoulder" preserveAspectRatio= "xMidYMid slice">
-              <g id="stab_565w_vectors">
-                <g id="plantin_tear_3">
-                  <circle id="Ellipse 13" cx="255.582" cy="355.453" r="6.5155" fill="#D8E63C"/>
-                  <path id="Polygon 7" d="M255.582 337.535L261.225 352.195H249.939L255.582 337.535Z" fill="#D8E63C"/>
-                </g>
-                <g id="plantin_tear_2">
-                  <circle id="Ellipse 13_2" cx="293.047" cy="321.246" r="6.5155" fill="#D8E63C"/>
-                  <path id="Polygon 7_2" d="M293.047 303.329L298.689 317.989H287.404L293.047 303.329Z" fill="#D8E63C"/>
-                </g>
-                <g id="plantin_tear_1">
-                  <circle id="Ellipse 13_3" cx="268.609" cy="274.008" r="6.5155" fill="#D8E63C"/>
-                  <path id="Polygon 7_3" d="M268.609 256.091L274.252 270.751H262.967L268.609 256.091Z" fill="#D8E63C"/>
-                </g>
-                <path id="stitch_4" d="M443.051 531.862L476.458 498.455" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="stitch_3" d="M431.23 520.041L464.638 486.634" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="stitch_2" d="M419.406 508.22L452.813 474.813" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
-                <path id="stitch_1" d="M407.527 496.343L440.935 462.936" stroke="#FF0035" stroke-width="5.55696" stroke-linecap="round" stroke-linejoin="round"/>
-                <g id="drops" class="drops">
-                  <g id="drop_12">
-                    <ellipse id="Ellipse 13_4" cx="438.228" cy="792.624" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_4" d="M438.228 774.815L443.837 789.386H432.618L438.228 774.815Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_11">
-                    <ellipse id="Ellipse 13_5" cx="462.696" cy="757.494" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_5" d="M462.696 739.686L468.306 754.256H457.087L462.696 739.686Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_10">
-                    <ellipse id="Ellipse 13_6" cx="413.993" cy="745.621" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_6" d="M413.993 727.813L419.603 742.383H408.383L413.993 727.813Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_9">
-                    <ellipse id="Ellipse 13_7" cx="438.228" cy="716.305" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_7" d="M438.228 698.497L443.837 713.067H432.618L438.228 698.497Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_8">
-                    <ellipse id="Ellipse 13_8" cx="462.579" cy="687.959" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_8" d="M462.579 670.15L468.189 684.721H456.969L462.579 670.15Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_7">
-                    <ellipse id="Ellipse 13_9" cx="413.993" cy="675.223" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_9" d="M413.993 657.415L419.603 671.985H408.383L413.993 657.415Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_6">
-                    <ellipse id="Ellipse 13_10" cx="438.228" cy="645.318" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_10" d="M438.228 627.509L443.837 642.08H432.618L438.228 627.509Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_5">
-                    <ellipse id="Ellipse 13_11" cx="461.97" cy="612.125" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_11" d="M461.97 594.316L467.58 608.887H456.36L461.97 594.316Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_4">
-                    <ellipse id="Ellipse 13_12" cx="413.993" cy="603.16" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_12" d="M413.993 585.352L419.603 599.922H408.383L413.993 585.352Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_3">
-                    <ellipse id="Ellipse 13_13" cx="438.228" cy="565.364" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_13" d="M438.228 547.556L443.837 562.126H432.618L438.228 547.556Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_2">
-                    <ellipse id="Ellipse 13_14" cx="462.579" cy="544.527" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_14" d="M462.579 526.719L468.189 541.29H456.969L462.579 526.719Z" fill="#FF0035"/>
-                  </g>
-                  <g id="drop_1">
-                    <ellipse id="Ellipse 13_15" cx="413.993" cy="521.026" rx="6.47766" ry="6.47572" fill="#FF0035"/>
-                    <path id="Polygon 7_15" d="M413.993 503.218L419.603 517.789H408.383L413.993 503.218Z" fill="#FF0035"/>
-                  </g>
-                </g>
-              </g>
-            </svg>
-            <p>“Gentlemen, you are mistaken. What harm have I done you?” </p>
+          <div class="part-four__story-cliffhanger">
+            <noscript><p>But with loyal partners, I would rebuild and return…</p></noscript>
+            <div class="story-cliffhanger">
+              <div class="story-cliffhanger__message">
+                <p>But with loyal partners, I would rebuild and return…</p>
+              </div>
+              <div class="story-cliffhanger__objects">
+                <img class="book" src="./src/assets/images/jpeg/sale_book.jpg" alt="old book" width="366" height="287">
+                <img class="painting" src="./src/assets/images/jpeg/sale_painting.jpg" alt="old painting" width="360" height="410">
+                <img class="paper" src="./src/assets/images/jpeg/sale_paper_painting.jpg" alt="old paper banner painting" width="956" height="256">
+              </div>
+            </div>
           </div>
-          <section class="part-one__half">
-            <h4 class="half__title">Half dead or half alive?</h4>
-            <p class="half__text">Gravely wounded, I was attended to by renowned surgeon Joannes Farinalius, who stitched the deep wound. Though I wasn’t expected to survive the attack, I made it through. But the wound left me physically weakened, and I knew I could no longer continue with bookbinding as before, because it’s a craft that demanded so much strength. </p>
-          </section>
           <div class="part-one__plantin-chat">
             <img class="plantin-chat__avatar" src="./src/assets/images/png/christophe_plantin_avatar.png" alt="christophe plantin painted by Rubens chat avatar" width="114" height="157">
             <div class="plantin-chat__text">
-              <p class="text">Bookbinding will never be the same again</p>
-              <p class="text">I need your help now more than ever!</p>
+              <p class="text"><span class="name-output">Apprentice</span>, thank you for aiding me in my early years in Antwerp.</p>
+              <p class="text">Adieu et à bientôt!</p>
             </div>
           </div>
-        </section>
-        <section class="part-two">
-          <h3 class="visually-hidden" id="change">From Binding To Printing</h3>
-        </section>
-        <section class="part-three">
-          <h3 class="visually-hidden" id="business">The First Printing Business</h3>
         </section>
       </section>
-      <section class="visually-hidden">
-        <h2 id="outro">Afterword</h2>
+      <section class="outro ">
+        <h2 class="outro__title" id="outro">Outro</h2>
+        <section class="afterword ">
+          <h3 class="visually-hidden">Visit the Museum</h3>
+          <section class="afterword__museum ">
+            <h4 class="museum__title">The Life Of Christophe Plantin</h4>
+            <p>Christophe Plantin faced great challenges, but with his motto Labore et Constantia, Labor and Perseverance, he built an unmatched printing empire. After all, he was the right man, in the right place, at the right time.</p>
+            <div>
+              <p>Want to learn more?</p>
+              <p>Visit the museum and explore his extraordinary legacy</p>
+            </div>
+            <a class="museum__primary-button" href= "https://museumplantinmoretus.be/en/content/plan-your-visit-0" aria-label="Get information on planning your visit to the Plantin-Moretus museum" >
+              Visit The Museum
+            </a>
+          </section>
+          <section class="afterword__stories">
+            <h4 class="visually-hidden">You might also like</h4>
+
+            <div class="stories__wrapper">
+              <ul class="stories__list">
+                <li class="list__story-card">
+                  <article class="story-card__content">
+                    <img class="content__img" src="./src/assets/images/png/card_shield_story_1.png" alt="shield with drawing compass as symbol" width="198" height="328">
+                    <h5 class="content__title">
+                      <span class="content__title content__title--elegant-regular">Story 1</span>
+                      <span class="visually-hidden">-</span>
+                      <span class="content__title content__title--script">Wounds to Wonders</span>
+                      <span class="visually-hidden">:</span>
+                      <span class="content__title content__title--elegant-bold"> <span> The Early Journey of </span> <span> Christophe Plantin </span> </span>
+                    </h5>
+                    <a href="/">
+                      Read again
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                          <path d="M0.941406 3.5C0.665264 3.5 0.441406 3.72386 0.441406 4C0.441406 4.27614 0.665264 4.5 0.941406 4.5L0.941406 3.5ZM15.295 4.35355C15.4902 4.15829 15.4902 3.84171 15.295 3.64645L12.113 0.464467C11.9177 0.269204 11.6011 0.269204 11.4059 0.464467C11.2106 0.659729 11.2106 0.976311 11.4059 1.17157L14.2343 4L11.4059 6.82843C11.2106 7.02369 11.2106 7.34027 11.4059 7.53553C11.6011 7.7308 11.9177 7.7308 12.113 7.53553L15.295 4.35355ZM0.941406 4.5L14.9414 4.5L14.9414 3.5L0.941406 3.5L0.941406 4.5Z" fill="#3A3A3A"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </article>
+                </li>
+                <li class="list__story-card">
+                  <article class="story-card__content">
+                    <img class="content__img" src="./src/assets/images/png/card_shield_story.png" alt="shield with question mark as symbol yet to be revealed" width="198" height="328">
+                    <h5 class="content__title">
+                      <span class="content__title content__title--elegant-regular">Story 2</span>
+                      <span class="visually-hidden">-</span>
+                      <span class="content__title content__title--script">Juggling Faiths</span>
+                      <span class="visually-hidden">:</span>
+                      <span class="content__title content__title--elegant-bold"> <span>Plantin</span> <span>Between Factions</span></span>
+                    </h5>
+                    <a href="/">
+                      Read the Story
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                          <path d="M0.941406 3.5C0.665264 3.5 0.441406 3.72386 0.441406 4C0.441406 4.27614 0.665264 4.5 0.941406 4.5L0.941406 3.5ZM15.295 4.35355C15.4902 4.15829 15.4902 3.84171 15.295 3.64645L12.113 0.464467C11.9177 0.269204 11.6011 0.269204 11.4059 0.464467C11.2106 0.659729 11.2106 0.976311 11.4059 1.17157L14.2343 4L11.4059 6.82843C11.2106 7.02369 11.2106 7.34027 11.4059 7.53553C11.6011 7.7308 11.9177 7.7308 12.113 7.53553L15.295 4.35355ZM0.941406 4.5L14.9414 4.5L14.9414 3.5L0.941406 3.5L0.941406 4.5Z" fill="#3A3A3A"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </article>
+                </li>
+                <li class="list__story-card">
+                  <article class="story-card__content">
+                    <img class="content__img" src="./src/assets/images/png/card_shield_story.png" alt="shield with question mark as symbol yet to be revealed" width="198" height="328">
+                    <h5 class="content__title">
+                      <span class="content__title content__title--elegant-regular">Story 3</span>
+                      <span class="visually-hidden">-</span>
+                      <span class="content__title content__title--script">Going Academic </span>
+                      <span class="visually-hidden">:</span>
+                      <span class="content__title content__title--elegant-bold"> <span> Plantin and the </span> <span>  Humanist Movement </span> </span>
+                    </h5>
+                    <a href="/">
+                      Read the Story
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                          <path d="M0.941406 3.5C0.665264 3.5 0.441406 3.72386 0.441406 4C0.441406 4.27614 0.665264 4.5 0.941406 4.5L0.941406 3.5ZM15.295 4.35355C15.4902 4.15829 15.4902 3.84171 15.295 3.64645L12.113 0.464467C11.9177 0.269204 11.6011 0.269204 11.4059 0.464467C11.2106 0.659729 11.2106 0.976311 11.4059 1.17157L14.2343 4L11.4059 6.82843C11.2106 7.02369 11.2106 7.34027 11.4059 7.53553C11.6011 7.7308 11.9177 7.7308 12.113 7.53553L15.295 4.35355ZM0.941406 4.5L14.9414 4.5L14.9414 3.5L0.941406 3.5L0.941406 4.5Z" fill="#3A3A3A"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </article>
+                </li>
+                <li class="list__story-card">
+                  <article class="story-card__content">
+                    <img class="content__img" src="./src/assets/images/png/card_shield_story.png" alt="shield with question mark as symbol yet to be revealed" width="198" height="328">
+                    <h5 class="content__title">
+                      <span class="content__title content__title--elegant-regular">Story 4</span>
+                      <span class="visually-hidden">-</span>
+                      <span class="content__title content__title--script">Archive Away </span>
+                      <span class="visually-hidden">:</span>
+                      <span class="content__title content__title--elegant-bold"> <span> The Legacy of </span> <span> Knowledge & Illustration </span> </span>
+                    </h5>
+                    <a href="/">
+                      Read the Story
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                          <path d="M0.941406 3.5C0.665264 3.5 0.441406 3.72386 0.441406 4C0.441406 4.27614 0.665264 4.5 0.941406 4.5L0.941406 3.5ZM15.295 4.35355C15.4902 4.15829 15.4902 3.84171 15.295 3.64645L12.113 0.464467C11.9177 0.269204 11.6011 0.269204 11.4059 0.464467C11.2106 0.659729 11.2106 0.976311 11.4059 1.17157L14.2343 4L11.4059 6.82843C11.2106 7.02369 11.2106 7.34027 11.4059 7.53553C11.6011 7.7308 11.9177 7.7308 12.113 7.53553L15.295 4.35355ZM0.941406 4.5L14.9414 4.5L14.9414 3.5L0.941406 3.5L0.941406 4.5Z" fill="#3A3A3A"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </article>
+                </li>
+                <li class="list__story-card">
+                  <article class="story-card__content">
+                    <img class="content__img" src="./src/assets/images/png/card_shield_story.png" alt="shield with question mark as symbol yet to be revealed" width="198" height="328">
+                    <h5 class="content__title">
+                      <span class="content__title content__title--elegant-regular">Story 5</span>
+                      <span class="visually-hidden">-</span>
+                      <span class="content__title content__title--script">Search for a Successor</span>
+                      <span class="visually-hidden">:</span>
+                      <span class="content__title content__title--elegant-bold"> <span> The Legacy of </span> <span> Plantin-Moretus </span> </span>
+                    </h5>
+                    <a href="/">
+                      Read the Story
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                          <path d="M0.941406 3.5C0.665264 3.5 0.441406 3.72386 0.441406 4C0.441406 4.27614 0.665264 4.5 0.941406 4.5L0.941406 3.5ZM15.295 4.35355C15.4902 4.15829 15.4902 3.84171 15.295 3.64645L12.113 0.464467C11.9177 0.269204 11.6011 0.269204 11.4059 0.464467C11.2106 0.659729 11.2106 0.976311 11.4059 1.17157L14.2343 4L11.4059 6.82843C11.2106 7.02369 11.2106 7.34027 11.4059 7.53553C11.6011 7.7308 11.9177 7.7308 12.113 7.53553L15.295 4.35355ZM0.941406 4.5L14.9414 4.5L14.9414 3.5L0.941406 3.5L0.941406 4.5Z" fill="#3A3A3A"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </article>
+                </li>
+                <li class="list__story-card">
+                  <article class="story-card__content">
+                    <img class="content__img" src="./src/assets/images/png/card_shield_story.png" alt="shield with question mark as symbol yet to be revealed" width="198" height="328">
+                    <h5 class="content__title">
+                      <span class="content__title content__title--elegant-regular">Story 6</span>
+                      <span class="visually-hidden">-</span>
+                      <span class="content__title content__title--script"> Female Lead </span>
+                      <span class="visually-hidden">:</span>
+                      <span class="content__title content__title--elegant-bold"> <span> The Women Behind </span> <span> the Printing Press </span> </span>
+                    </h5>
+                    <a href="/">
+                      Read the Story
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
+                          <path d="M0.941406 3.5C0.665264 3.5 0.441406 3.72386 0.441406 4C0.441406 4.27614 0.665264 4.5 0.941406 4.5L0.941406 3.5ZM15.295 4.35355C15.4902 4.15829 15.4902 3.84171 15.295 3.64645L12.113 0.464467C11.9177 0.269204 11.6011 0.269204 11.4059 0.464467C11.2106 0.659729 11.2106 0.976311 11.4059 1.17157L14.2343 4L11.4059 6.82843C11.2106 7.02369 11.2106 7.34027 11.4059 7.53553C11.6011 7.7308 11.9177 7.7308 12.113 7.53553L15.295 4.35355ZM0.941406 4.5L14.9414 4.5L14.9414 3.5L0.941406 3.5L0.941406 4.5Z" fill="#3A3A3A"/>
+                        </svg>
+                      </span>
+                    </a>
+                  </article>
+                </li>
+              </ul>
+              <div class="stories__buttons">
+                <button class="nav-button__prev" type="button">
+                  <span class="visually-hidden">prev</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                    <path d="M2.67512 9.75086C13.29 9.13371 14.1951 0.822857 18.6797 0C4.81455 0 4.89683 8.43429 0.000832034 9.75086C4.89683 11.0674 4.81455 19.5017 18.6797 19.5017C14.1951 18.6789 13.29 10.368 2.67512 9.75086Z" fill="#60212E"/>
+                  </svg>
+                </button>
+                <p><span class="number">1</span>/6</p>
+                <button class="nav-button__next" type="button">
+                  <span class="visually-hidden">next</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M16.9792 10.3837C6.36432 9.76653 5.45918 1.45567 0.974609 0.632812C14.8398 0.632812 14.7575 9.0671 19.6535 10.3837C14.7575 11.7002 14.8398 20.1345 0.974609 20.1345C5.45918 19.3117 6.36432 11.0008 16.9792 10.3837Z" fill="#60212E"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+          </section>
+        </section>
       </section>
     </main>
-    <footer>
+    <footer class="visually-hidden">
+      <ul>
+        <li>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="66" viewBox="0 0 22 66" fill="none">
+              <path d="M5.90857 1.04263C9.48119 1.04263 13.0644 1.05279 16.637 1.06294C16.8899 1.40822 17.3958 2.21049 17.4695 3.34788C17.5644 4.75946 16.9321 5.78515 16.7002 6.12027C13.096 6.12027 9.49173 6.12027 5.87695 6.12027C6.08773 6.13043 6.40389 6.12027 6.72005 5.95779C7.80554 5.4094 7.73177 3.72362 7.72123 3.50021C7.71069 3.19555 7.63692 1.82459 6.61466 1.25589C6.35119 1.10356 6.08773 1.05278 5.89803 1.03247L5.90857 1.04263Z" stroke="#1D1D1B" stroke-width="0.761893" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.99047 60.1967C3.23286 60.2576 3.41202 60.3795 3.55956 60.4811C4.04434 60.8162 4.24457 61.2427 4.29727 61.3544C4.45535 61.6997 4.46589 61.9942 4.47643 62.1871C4.4975 62.6137 4.40266 62.9488 4.32888 63.162C5.10875 63.1824 5.87807 63.2128 6.65794 63.2331C6.60525 63.3245 6.53148 63.4566 6.42609 63.6089C6.21531 63.9034 5.70946 64.5939 4.77151 64.8783C3.72818 65.1931 2.84293 64.8072 2.66377 64.726C2.47407 64.6447 1.65205 64.2385 1.25158 63.3144C0.85111 62.4106 0.882726 61.0904 1.68367 60.5014C1.72582 60.4709 2.33707 60.0444 3.00101 60.2069L2.99047 60.1967Z" stroke="#1D1D1B" stroke-width="0.761893" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2.99219 60.196C4.6573 60.196 6.32242 60.2061 7.98753 60.2163C7.83999 60.6631 7.66083 61.1303 7.45006 61.6279C7.19713 62.2169 6.92313 62.7551 6.64912 63.2324C5.86925 63.2121 5.09993 63.1816 4.32006 63.1613C4.36222 63.0496 4.77323 61.8615 4.02498 60.917C3.6772 60.4803 3.22404 60.2772 2.99219 60.196Z" stroke="#1D1D1B" stroke-width="0.761893" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5.911 1.04159H5.93207C5.93207 1.04159 5.97423 1.06191 5.99531 1.06191C6.38524 1.12284 6.61709 1.2447 6.62763 1.26501C7.41803 1.73215 7.56557 2.7883 7.58665 3.24529H5.40514C5.34191 3.24529 5.27867 3.27575 5.24706 3.31638C5.21544 3.31638 5.18383 3.34684 5.16275 3.37731C5.03628 3.52964 4.45666 4.26082 4.70958 5.10371C4.84659 5.52007 5.0679 5.81458 5.3946 5.97706C5.66861 6.12939 5.95315 6.13954 6.17446 6.12939C6.17446 6.12939 6.20608 6.12939 6.21662 6.12939H14.2998C13.4251 11.8671 13.3513 17.5338 14.1101 22.9872C14.9111 28.9178 16.5551 33.7111 18.0094 37.9459C20.1488 44.2015 21.9931 49.6143 20.6863 56.7535C20.1699 59.5868 19.2108 62.349 17.8408 64.9792C13.1405 64.9792 8.45083 64.9792 3.75056 64.9792C3.97187 64.9894 4.30911 64.9792 4.68851 64.8879C6.44847 64.4106 7.22834 62.3084 7.98712 60.2063C8.68268 58.2768 8.91453 56.6824 9.07261 55.5653C9.07261 55.5653 9.35715 53.646 9.35715 51.7977C9.35715 47.4614 8.16628 44.0492 6.73302 39.9363C5.65807 36.839 4.43558 33.3354 3.41332 28.664C0.135785 13.6951 2.27514 1.86417 4.66743 1.13299C5.16275 0.990818 5.5843 0.980662 5.90046 1.02128L5.911 1.04159Z" stroke="#1D1D1B" stroke-width="0.761893" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="#top" id="scrollUp">Scroll Up</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 8 15" fill="none">
+              <path d="M4.35355 0.646447C4.15829 0.451184 3.84171 0.451184 3.64645 0.646447L0.464467 3.82843C0.269204 4.02369 0.269204 4.34027 0.464467 4.53553C0.659729 4.7308 0.976311 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646447ZM4.5 15L4.5 1L3.5 1L3.5 15L4.5 15Z" fill="#1D1D1B"/>
+            </svg>
+          </div>
 
+        </li>
+        <li class="footer__nav">
+          <p>Go to</p>
+          <a href="#intro">Intro</a>
+          <a href="#chapter-one">Chapter I</a>
+          <a href="#chapter-two">Chapter II</a>
+          <a href="#outro">Outro</a>
+        </li>
+        <li class="footer__logo">
+          <p>Brought to you by</p>
+        </li>
+        <li class="footer__social">
+          <p>Find us on</p>
+        </li>
+      </ul>
     </footer>
 
+    <!-- <script type="module" src="./src/js/locomotive.js"></script> -->
+     <script type="module" src="./src/js/cardnav.js"></script>
     <script type="module" src="./src/js/scrollytelling.js"></script>
     <script type="module" src="./src/js/form.js"></script>
     <script type="module" src="./src/js/main.js"></script>

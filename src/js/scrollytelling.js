@@ -5,6 +5,42 @@
   let tlSurgery,tlStab;
 
 {
+  const changeBackgroundColor = () => {
+    // gsap.fromTo(".chapter-one__charcoal-container", {
+    //   scrollTrigger: {
+    //     trigger: ".chapter-one__maroon-container",
+    //     start: "top center",
+    //     end: "bottom center",
+    //     scrub: 1,
+    //     markers: true,
+    //     toggleActions: "play pause resume reset"
+    //   },
+    //   {
+    //     opacity: 0
+    //   }, {
+    //     opacity: 1,
+    //     duration: 1
+    //   }
+    // });
+    gsap.fromTo(".chapter-one__charcoal-container",
+      {
+        opacity: 0 // Starting properties
+      },
+      {
+        opacity: 1, // Ending properties
+        duration: 1, // Duration of the animation
+        scrollTrigger: {
+          trigger: ".chapter-one__maroon-container", // Trigger element
+          start: "center center", // Start position
+          end: "bottom center", // End position
+          scrub: 1, // Smooth scrubbing
+          markers: true, // Show markers for debugging
+          toggleActions: "play pause resume reset" // Control actions
+        }
+      }
+    );
+  }
+
   const setAnimationScroll = () => {
 
     tlStab = gsap.timeline({
@@ -131,7 +167,7 @@
   //gsap.registerPlugin(MotionPathPlugin, ScrollToPlugin, TextPlugin);
 
 
-
+    //changeBackgroundColor();
     setAnimationScroll();
   };
 
